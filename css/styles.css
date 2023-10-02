@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #2F303A;
+    --accent-color: #2196F3;
+    --transperent-color: #FFFFFF99;
+    --inactive-filter-color: #F5F4FA;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14;
+    color: var(--background-secondary-color)
+}
+
+
+/* Header */
+
+.header {
+    background-color: var(--background-primary-color);
+}
+
+.contact {
+color: var(--secondary-color);
+}
+
+.contact,
+.navigation-list {
+    list-style-type: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.tel,
+.email,
+.navigation-button,
+.active-navigation-button {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.tel:hover,
+.email:hover,
+.color-part-logo,
+.navigation-button:hover,
+.active-navigation-button {
+    color: var(--accent-color);
+}
+
+
+/* Main */
+
+.hat {
+    background-color: var(--background-secondary-color);
+}
+
+.hat-header {
+    color: var(--background-primary-color);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+}
+
+.hat-button {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.feature-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.42px;
+    font-weight: 700;   
+}
+
+.features-description{
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+
+.wwd-title,
+.team-title {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px; 
+}
+
+.team {
+    background-color: var(--inactive-filter-color);
+}
+
+.team-member {
+    background-color: var(--background-primary-color);
+}
+
+.member-name {
+color: var(--primary-color);
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.48px;
+}
+
+.member-job {
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+
+.wwd-list,
+.features-list,
+.team-list {
+    list-style-type: none;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--background-secondary-color);
+}
+
+.footer-logo { 
+    text-decoration: none;
+    color: var(--background-primary-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.addres-footer {
+    text-decoration: none;    
+    color: var(--background-primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+}
+
+.contact-footer {
+    all: initial;
+    font-family: inherit;
+}
+
+.email-footer,
+.tel-footer { 
+    text-decoration: none; 
+    color: var(--transperent-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+}
+
+
+/* Main (Portfolio) */
+
+.button-filter, 
+.active-button-filter {
+    color: var(--primary-color);
+    background-color: var(--inactive-filter-color);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+} 
+
+.active-button-filter,
+.button-filter:hover {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+}
+
+.projects-list,
+.sort-buttons-list {    
+    list-style-type: none;
+}
+
+.projects{
+    background-color: var(--background-primary-color);
+}
+
+.projects-title {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px; 
+}
+
+.projects-description {
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+}
