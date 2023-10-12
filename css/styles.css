@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #2F303A;
+    --accent-color: #2196F3;
+    --transperent-color: #FFFFFF99;
+    --inactive-filter-color: #F5F4FA;
+}
+
+.body {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-color)
+}
+
+
+/* Header */
+
+.header {
+    background-color: var(--background-primary-color);
+}
+
+.contact {
+color: var(--secondary-color);
+}
+
+.contact,
+.navigation-list {
+    list-style-type: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.tel,
+.email,
+.navigation-button,
+.active-navigation-button {
+    transition: color 333ms;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.tel:hover,
+.tel:focus,
+.email:hover,
+.email:focus,
+.color-part-logo,
+.navigation-button:hover,
+.navigation-button:focus,
+.active-navigation-button {
+    color: var(--accent-color);
+}
+
+
+/* Main */
+
+.hat {
+    background-color: var(--background-secondary-color);
+}
+
+.hat-header {
+    color: var(--background-primary-color);
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+}
+
+.hat-button {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+}
+
+.features-title {
+    text-transform: uppercase;
+    font-size: inherit;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    font-weight: 700;   
+}
+
+.features-description{
+    color: var(--secondary-color);
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+
+.wwd-title,
+.team-title {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px; 
+}
+
+.team {
+    background-color: var(--inactive-filter-color); 
+}
+
+.team-member {
+    background-color: var(--background-primary-color);
+}
+
+.member-name {
+color: var(--primary-color);
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.48px;
+}
+
+.member-job {
+    color: var(--secondary-color);
+    font-size: 16px;
+    letter-spacing: 0.48px;
+}
+
+.wwd-list,
+.features-list,
+.team-list {
+    list-style-type: none;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--background-secondary-color);
+}
+
+.footer-logo { 
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.contact-footer {
+    font-style: normal;
+}
+
+.addres-footer {
+    text-decoration: none;    
+    color: var(--background-primary-color);
+    
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+}
+
+.email-footer,
+.tel-footer { 
+    text-decoration: none; 
+    color: var(--transperent-color);
+    font-size: inherit;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+}
+
+
+/* Main (Portfolio) */
+
+.button-filter, 
+.button-filter-active {
+    color: var(--primary-color);
+    background-color: var(--inactive-filter-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+} 
+
+.button-filter-active {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+}
+
+.projects {
+    background-color: var(--background-primary-color);
+}
+
+.projects-list,
+.projects-list-link,
+.sort-buttons-list {    
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.projects-title {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px; 
+}
+
+.projects-description {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+}
