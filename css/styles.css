@@ -75,7 +75,7 @@ color: var(--secondary-color);
     text-transform: uppercase;
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.363;
+    line-height: 1.36;
     letter-spacing: 2.64px;
 }
 
@@ -84,21 +84,21 @@ color: var(--secondary-color);
     background-color: var(--accent-color);
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.875;
+    line-height: 1.87;
     letter-spacing: 0.96px;
 }
 
 .features-title {
     text-transform: uppercase;
     font-size: inherit;
-    line-height: 1.714;
+    line-height: 1.71;
     letter-spacing: 0.42px;
     font-weight: 700;   
 }
 
 .features-description{
     color: var(--secondary-color);
-    line-height: 1.714;
+    line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
@@ -162,7 +162,7 @@ letter-spacing: 0.48px;
     text-decoration: none;    
     color: var(--background-primary-color);
     
-    line-height: 1.142;
+    line-height: 1.14;
     letter-spacing: 0.42px;
 }
 
@@ -171,7 +171,7 @@ letter-spacing: 0.48px;
     text-decoration: none; 
     color: var(--transperent-color);
     font-size: inherit;
-    line-height: 1.142;
+    line-height: 1.14;
     letter-spacing: 0.42px;
 }
 
@@ -186,7 +186,7 @@ letter-spacing: 0.48px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.625;
+    line-height: 1.62;
     letter-spacing: 0.48px;
 } 
 
@@ -217,6 +217,6 @@ letter-spacing: 0.48px;
 .projects-description {
     color: var(--secondary-color);
     font-size: 16px;
-    line-height: 1.875;
+    line-height: 1.87;
     letter-spacing: 0.48px;
 }
