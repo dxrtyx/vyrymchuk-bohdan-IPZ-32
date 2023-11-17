@@ -11,14 +11,14 @@
 .body {
     font-style: normal;
     font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
     font-weight: 400;
     font-size: 14px;
-    color: var(--primary-color)
 }
 
 button {
-    border: 0px;
     border-radius: 4px;
+    border: 0px;
 }
 
 button:focus {
@@ -53,19 +53,19 @@ img {
 }
 
 .header .container {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .contact {
     color: var(--secondary-color);
-    gap: 40px; 
     margin-left: auto;
+    gap: 40px; 
 }
 
 .navigation-list {
-    gap: 50px;
     padding: 32px 0;
+    gap: 50px;
 }
 
 .contact,
@@ -113,6 +113,13 @@ img {
     padding: 200px 0;
 }
 
+.hat .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .hat-header {
     color: var(--background-primary-color);
     text-transform: uppercase;
@@ -133,13 +140,6 @@ img {
     line-height: 1.87;
     letter-spacing: 0.96px;
     padding: 10px 24px;
-}
-
-.hat .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .features {
@@ -186,20 +186,20 @@ img {
     margin-bottom: 50px; 
 }
 
+.team {
+    background-color: var(--inactive-filter-color); 
+    padding: 94px;
+}
+
 .team-list {
     display: flex;
     gap: 30px;
 }
 
 .team-description {
-    padding: 30px 0;
-    display: flex;
     flex-direction: column;
-}
-
-.team {
-    background-color: var(--inactive-filter-color); 
-    padding: 94px;
+    display: flex;
+    padding: 30px 0;   
 }
 
 .team-member {
@@ -274,10 +274,10 @@ img {
 /* Main (Portfolio) */
 
 .sort-buttons-list {
-    display: flex;
-    gap: 8px;
     justify-content: center;
+    display: flex;
     margin-bottom: 50px;
+    gap: 8px;
 }
 
 .button-filter {
@@ -316,15 +316,15 @@ img {
     justify-content: center;
 }
 
+.projects-list li {
+    border: 1px solid #EEE;
+}
+
 .projects-list,
 .projects-list-link,
 .sort-buttons-list {    
     list-style-type: none;
     text-decoration: none;
-}
-
-.projects-list li {
-    border: 1px solid #EEE;
 }
 
 .projects-text {
