@@ -16,20 +16,62 @@
     color: var(--primary-color)
 }
 
+button {
+    border: 0px;
+    border-radius: 4px;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.363);
+}
+
+h1, h2, h3, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
 
 /* Header */
 
 .header {
-    background-color: var(--background-primary-color);
+   background-color: var(--background-primary-color);
+   border-bottom: 1px solid #ECECEC;
+}
+
+.container  {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
 }
 
 .contact {
-color: var(--secondary-color);
+    color: var(--secondary-color);
+    gap: 40px; 
+    margin-left: auto;
+}
+
+.navigation-list {
+    gap: 50px;
+    padding: 32px 0;
 }
 
 .contact,
 .navigation-list {
     list-style-type: none;
+    display: flex;    
 }
 
 .logo {
@@ -39,12 +81,12 @@ color: var(--secondary-color);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
+    margin: 0 93px 0 0;
 }
 
 .tel,
 .email,
-.navigation-button,
-.active-navigation-button {
+.navigation-button {
     transition: color 333ms;
     text-decoration: none;
     color: inherit;
@@ -68,6 +110,7 @@ color: var(--secondary-color);
 
 .hat {
     background-color: var(--background-secondary-color);
+    padding: 200px 0;
 }
 
 .hat-header {
@@ -77,6 +120,9 @@ color: var(--secondary-color);
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 2.64px;
+    max-width: 696px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .hat-button {
@@ -86,6 +132,24 @@ color: var(--secondary-color);
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
+    padding: 10px 24px;
+}
+
+.hat .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features {
+    padding-top: 94px ;
+    padding-bottom: 94px;
+}
+
+.features-list {
+    display: flex;
+    gap: 30px;
 }
 
 .features-title {
@@ -100,19 +164,42 @@ color: var(--secondary-color);
     color: var(--secondary-color);
     line-height: 1.71;
     letter-spacing: 0.42px;
+    width: 270px;
 }
 
+.wwds {
+    padding-bottom: 94px;
+}
+
+.wwd-list {
+    display: flex;
+    gap: 30px;
+}
 
 .wwd-title,
 .team-title {
     color: var(--primary-color);
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 1.08px; 
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-description {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .team {
     background-color: var(--inactive-filter-color); 
+    padding: 94px;
 }
 
 .team-member {
@@ -120,16 +207,19 @@ color: var(--secondary-color);
 }
 
 .member-name {
-color: var(--primary-color);
-font-size: 16px;
-font-weight: 500;
-letter-spacing: 0.48px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    text-align: center;
 }
 
 .member-job {
     color: var(--secondary-color);
     font-size: 16px;
     letter-spacing: 0.48px;
+    margin-top: 10px;
+    text-align: center; 
 }
 
 .wwd-list,
@@ -143,6 +233,7 @@ letter-spacing: 0.48px;
 
 .footer {
     background-color: var(--background-secondary-color);
+    padding: 60px 0;
 }
 
 .footer-logo { 
@@ -156,6 +247,8 @@ letter-spacing: 0.48px;
 
 .contact-footer {
     font-style: normal;
+    display: flex;
+    flex-direction: column;
 }
 
 .addres-footer {
@@ -164,6 +257,7 @@ letter-spacing: 0.48px;
     
     line-height: 1.14;
     letter-spacing: 0.42px;
+    margin-top: 28px;
 }
 
 .email-footer,
@@ -173,13 +267,20 @@ letter-spacing: 0.48px;
     font-size: inherit;
     line-height: 1.14;
     letter-spacing: 0.42px;
+    margin-top: 12px;
 }
 
 
 /* Main (Portfolio) */
 
-.button-filter, 
-.button-filter-active {
+.sort-buttons-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-filter {
     color: var(--primary-color);
     background-color: var(--inactive-filter-color);
     font-family: inherit;
@@ -188,6 +289,7 @@ letter-spacing: 0.48px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
+    padding: 6px 22px;
 } 
 
 .button-filter-active {
@@ -195,8 +297,23 @@ letter-spacing: 0.48px;
     background-color: var(--accent-color);
 }
 
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+}
+
 .projects {
     background-color: var(--background-primary-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
 }
 
 .projects-list,
@@ -204,6 +321,17 @@ letter-spacing: 0.48px;
 .sort-buttons-list {    
     list-style-type: none;
     text-decoration: none;
+}
+
+.projects-list li {
+    border: 1px solid #EEE;
+}
+
+.projects-text {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-primary-color);
 }
 
 .projects-title {
