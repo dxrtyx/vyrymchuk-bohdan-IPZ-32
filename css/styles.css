@@ -188,7 +188,8 @@ img {
 
 .team {
     background-color: var(--inactive-filter-color); 
-    padding: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list {
@@ -203,7 +204,9 @@ img {
 }
 
 .team-member {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     background-color: var(--background-primary-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .member-name {
@@ -249,6 +252,7 @@ img {
     font-style: normal;
     display: flex;
     flex-direction: column;
+    margin-top: 28px;
 }
 
 .addres-footer {
@@ -257,7 +261,6 @@ img {
     
     line-height: 1.14;
     letter-spacing: 0.42px;
-    margin-top: 28px;
 }
 
 .email-footer,
@@ -339,7 +342,8 @@ img {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 1.08px; 
+    letter-spacing: 1.08px;
+    margin-bottom: 4px; 
 }
 
 .projects-description {
