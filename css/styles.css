@@ -367,22 +367,21 @@ img {
     margin-top: 12px;
 }
 
-.social-footer {
+.social-ico-footer {
     list-style: none;
     display: flex;
     gap: 10px;
     margin: 20px 0 0 94px;
 }
 
-.social-footer svg {
+.social-ico-footer svg {
     color: white;
     fill: rgba(255, 255, 255, 0.10);
     transition: 333ms;
 }
 
-.social-footer svg:hover {
+.social-ico-footer svg:hover {
     fill: var(--accent-color);
-
 }
 
 .footer-bottom {
