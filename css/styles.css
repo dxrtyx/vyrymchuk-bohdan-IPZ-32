@@ -150,6 +150,7 @@ img {
 .hat-button {
     color: var(--background-primary-color);
     background-color: var(--accent-color);
+    cursor: pointer;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -181,7 +182,8 @@ img {
     font-size: inherit;
     line-height: 1.71;
     letter-spacing: 0.42px;
-    font-weight: 700;   
+    font-weight: 700;
+    margin-bottom: 10px;   
 }
 
 .features-description{
@@ -258,14 +260,19 @@ img {
     justify-content: center;
 }
 
-.member-social svg {
+.member-social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     fill: #ffffff00;
     color: #AFB1B8;
     transition: 333ms;
 }
 
-.member-social svg:hover {
-    fill: var(--accent-color);
+.member-social a:hover,
+.member-social a:focus {
+    background-color: var(--accent-color);
     color: var(--background-primary-color);
 }
 
@@ -294,12 +301,11 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
+    
 }
 
-.regular-customers-svg {
+.customers-svg a {
     display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid #AFB1B8;
     color: #AFB1B8;
     border-radius: 4px;
@@ -307,7 +313,8 @@ img {
     transition: 333ms;
 }
 
-.regular-customers-svg:hover {
+.customers-svg a:hover,
+.customers-svg a:focus {
     border: 1px solid var(--accent-color);
     color:  var(--accent-color);
 }
@@ -329,27 +336,14 @@ img {
     letter-spacing: 0.78px;
 }
 
-.footer-top {
-    display: flex;
-}
-
-.social-footer-title {
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.42px;
-    margin: 12px 0 3px 156px 
-}
-
-.contact-footer {
+.footer-contact {
     font-style: normal;
     display: flex;
     flex-direction: column;
     margin-top: 28px;
 }
 
-.addres-footer {
+.footer-addres {
     text-decoration: none;    
     color: var(--background-primary-color);
     
@@ -357,8 +351,8 @@ img {
     letter-spacing: 0.42px;
 }
 
-.email-footer,
-.tel-footer { 
+.footer-email,
+.footer-tel { 
     text-decoration: none; 
     color: var(--transperent-color);
     font-size: inherit;
@@ -367,27 +361,45 @@ img {
     margin-top: 12px;
 }
 
-.social-ico-footer {
+.footer-social-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+    margin: 15px 0 20px;
+}
+
+.footer-social {
     list-style: none;
     display: flex;
     gap: 10px;
-    margin: 20px 0 0 94px;
 }
 
-.social-ico-footer svg {
+.footer-social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
     color: white;
-    fill: rgba(255, 255, 255, 0.10);
     transition: 333ms;
 }
 
-.social-ico-footer svg:hover {
-    fill: var(--accent-color);
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
 }
 
-.footer-bottom {
+.footer-container{
     display: flex;
+    gap: 94px;
 }
 
+.footer-section-1{
+    margin-left: 215px;
+}
 /* Main (Portfolio) */
 
 .sort-buttons-list {
@@ -445,8 +457,6 @@ img {
 }
 
 .projects-text {
-    display: flex;
-    flex-direction: column;
     padding: 20px 24px;
     background-color: var(--background-primary-color);
 }
@@ -456,7 +466,7 @@ img {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 1.08px;
+    letter-spacing: 0.6px;
     margin-bottom: 4px; 
 }
 
